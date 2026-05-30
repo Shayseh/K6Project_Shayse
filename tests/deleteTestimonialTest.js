@@ -7,6 +7,11 @@ import { validateLoginResponse } from '../checks/authChecks.js';
 import { extractToken } from '../utils/extractToken.js';
 import { extractTestimonialId } from '../utils/extractTestimonialId.js';
 
+export const options = {
+    vus: TEST_CONFIGS.vus,
+    duration: TEST_CONFIGS.duration
+};
+
 export default function () {
 
 const loginResponse = loginRequest(PAYLOADS.login);
