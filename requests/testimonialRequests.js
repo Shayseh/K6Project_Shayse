@@ -19,3 +19,13 @@ export function postTestimonialRequest(token, payload){
             }
         });
 }
+
+export function deleteTestimonialRequest(token, testimonialId){
+    const url = URLS.deleteTestimonial(testimonialId);
+    return http.del(url, null, {
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`
+        }
+    });
+}

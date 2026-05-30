@@ -2,5 +2,6 @@ export const URLS = {
     login: 'https://www.ndosiautomation.co.za/APIDEV/login',
     profile: 'https://www.ndosiautomation.co.za/APIDEV/profile',
     testimonials: 'https://www.ndosiautomation.co.za/APIDEV/testimonials',
-    updateTestimonial: (testimonialId) => `https://www.ndosiautomation.co.za/APIDEV/testimonials/${testimonialId}`
+    updateTestimonial: (testimonialId) => `https://www.ndosiautomation.co.za/APIDEV/testimonials/${testimonialId}`,
+    deleteTestimonial: (testimonialId) => `https://www.ndosiautomation.co.za/APIDEV/testimonials/${testimonialId}`
 }
