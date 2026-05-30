@@ -3,3 +3,9 @@ export const TEST_CONFIGS = {
     duration: '20s', 
     sleepTime: 1 
 }
+
+export const HEADERS = {
+    JSONjson: {
+        'Content-Type': 'application/json'
+    }
+}

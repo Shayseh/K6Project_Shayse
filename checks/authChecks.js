@@ -7,4 +7,5 @@ export function validateLoginResponse(response){
         'body is not empty': (res) => res.body.length > 0,
 
     });
+
 }
