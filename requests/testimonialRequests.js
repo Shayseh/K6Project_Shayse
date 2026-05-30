@@ -8,4 +8,14 @@ export function postTestimonialRequest(token, payload){
             'Authorization': `Bearer ${token}`
         }
     });
+}   
+
+    export function putTestimonialRequest(token, testimonialId, payload){
+        const url = URLS.updateTestimonial(testimonialId);
+        return http.put(url, JSON.stringify(payload), {
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
+            }
+        });
 }

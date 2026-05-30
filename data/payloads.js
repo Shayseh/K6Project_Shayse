@@ -11,5 +11,12 @@ addTestimonials:{
   "rating": 5,
   "isPublic": true
     
+},
+
+updateTestimonials:{
+  "title": "Testimonial 1 - Updated",
+  "content": "Updated k6 testimonial",
+  "rating": 5
+
 }
 }
