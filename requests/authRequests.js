@@ -1,4 +1,5 @@
-import http from ''
+import http from 'k6/http';
+import {URLS} from '../config/urls.js';
 
 export function loginRequest(payload){
     const url = URLS.login;
