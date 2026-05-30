@@ -2,7 +2,6 @@ import http from 'k6/http';
 import {TEST_CONFIGS} from '../config/constants.js';
 import {PAYLOADS} from '../data/payloads.js';
 import { loginRequest } from '../requests/authRequests.js';
-//import { validateLoginResponse } from '../validators/authValidators.js';
 import { sleep } from 'k6';
 import { validateLoginResponse } from '../checks/authChecks.js';
 
