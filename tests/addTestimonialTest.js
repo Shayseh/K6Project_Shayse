@@ -3,7 +3,7 @@ import { TEST_CONFIGS } from '../config/constants.js';
 import { loginRequest } from '../requests/authRequests.js';
 import { postTestimonialRequest } from '../requests/testimonialRequests.js';
 import { PAYLOADS } from '../data/payloads.js';
-import { validateLoginResponse } from '../checks/authChecks.js';
+import { validateLoginResponse,validateAddTestimonialResponse } from '../checks/authChecks.js';
 import { extractToken } from '../utils/extractToken.js';
 
 
@@ -15,6 +15,7 @@ export const options = {
 export default function () {
     const loginResponse = loginRequest(PAYLOADS.login);
     validateLoginResponse(loginResponse);
+    console.log(loginResponse.body);
 
     const token = extractToken(loginResponse);//extract the token from the login response
    
@@ -23,6 +24,7 @@ export default function () {
         PAYLOADS.addTestimonials
     );  //post the testimonial
 
+    validateAddTestimonialResponse(testimonialResponse);
     console.log(testimonialResponse.body);
 
 }

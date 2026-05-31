@@ -1,6 +1,6 @@
 export const TEST_CONFIGS = { 
     vus: 1, //number of virtual users
-    duration: '20s', 
+    duration: '5s', 
     sleepTime: 1 
 }
 
